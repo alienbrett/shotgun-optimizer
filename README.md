@@ -3,7 +3,7 @@
 # Shotgun Optimizer
 Stochastic optimization for high dimensions in Python
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alienbrett/shotgun-optimizer/HEAD?urlpath=https%3A%2F%2Fgithub.com%2Falienbrett%2Fshotgun-optimizer%2Fblob%2Fmain%2Fshotgun_testing.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alienbrett/shotgun-optimizer/HEAD?labpath=shotgun_testing.ipynb)
 
 
 ## How does it work?
