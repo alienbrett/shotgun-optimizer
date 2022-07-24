@@ -23,8 +23,10 @@ The routine adjusts the sigma parameter used when generating candidates in the f
 * If the algo finds a new best candidate far away from the previous reference point, it will increase sigma, with the logic being that the algorithm actually is looking at too small a region of space if no candidates were found nearby
 * If the algo finds new points very close to the reference, then we're likely aproaching a local minima, and we can reduce sigma to search points near our reference point with more fine resolution.
 
+The algo also reduces the number of candidate guesses as it believes it approaches a local minima. This helps speed up each iteration, so it can converge to a minima more quickly once the rough region of a minima has been identified.
+
 ## Why this routine?
-I needed an optimization routine that could work in high-dimensional space where dimension reduction preprocessing wasn't feasible. Although the algo isn't fast, it's robust enough to get close to local minima even in very high dimensions (5-10k + dimensions). I also added 
+I needed an optimization routine that could work in high-dimensional space where dimension reduction preprocessing wasn't feasible. Although the algo isn't fast, it's robust enough to get close to local minima even in very high dimensions (5-10k + dimensions).
 
 ## Where does the algo fall short?
 * The routine isn't fast
